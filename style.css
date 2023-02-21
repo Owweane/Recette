@@ -80,7 +80,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 200px) {
 
     .header__burger {
         display: block;
