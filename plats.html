@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="plats.css">
+    <link rel="shortcut icon" type="image/png" href="food.png"/>    
+</head>
+
+<body>
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+    <header class="header">
+        <div class="header__logo">
+            <img src="food.png"/>
+        </div>
+        <nav class="header__nav">
+            <div class="header__nav__close" onclick="closeMenuMobile()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <ul class="header__nav__menu">
+                <li class="header__nav__menu__link">
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="entrees.html">Entrées</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="plats.html">Plats</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="desserts.html">Desserts</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="header__burger" onclick="openMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+    </header>
+
+    <script>
+        function openMenuMobile() {
+            document.querySelector('.header__nav').classList.add('open');
+            document.querySelector('.overlay-menu-mobile').classList.add('open');
+        }
+
+        function closeMenuMobile() {
+            document.querySelector('.header__nav').classList.remove('open');
+            document.querySelector('.overlay-menu-mobile').classList.remove('open');
+        }
+    </script>
+
+<h1>Plats</h1>
+
+<h3>Gnocchis à la parisienne</h3>
+
+<div class="ingredients">
+ <ul>
+     <li>600g De Gnocchis (à poêler)</li>
+     <li>80g De Comté</li>
+     <li>4 Tranches De Jambon Blanc</li>
+     <li>2/5 bou De Ciboulette</li>
+ </ul>
+</div>
+
+<div class="etapes">
+<ul>
+    <li><span class="st">Étape 1:</span> Préchauffez le four à 200 degré. Dans une poêle chaude, ajoutez une noisette de beurre.</li> 
+    <li><span class="st">Étape 2:</span> Faites revenir les Gnocchisà feu vif jusqu'à ce qu'ils soient bien dorés ( 2 à 3 minutes environ).<li> 
+    <li><span class="st">Étape 3:</span> Une fois les Gnocchis bien dorés, ajoutez un fond d'eau puis faites cuire à couvert pendant 1 minute.</li>
+    <li><span class="st">Étape 4:</span> Pendant ce temps, coupez le comté en lamelles.</li>
+    <li><span class="st">Étape 5:</span> Dans un plat allant au four, ajoutez les Gnocchis cuits.</li> 
+    <li><span class="st">Étape 6:</span> Ajoutez le jambon déchiré en morceaux. Salez et poivrez. Ajoutez le comté et mélangez.<li> 
+    <li><span class="st">Étape 7:</span> Enfournez le tout pendant 10 minutes à 200 degré.</li> 
+    <li><span class="st">Étape 8:</span> Sortez le plat du four. (Optionnel : Ajoutez la ciboulette ciselée sur le dessus au moment de servir). C'est prêt !</li>  
+</ul>
+</div>
+
+<h3>Boeuf aux oignons & riz</h3>
+
+<div class="ingredients">
+    <ul>
+        <li>4 Bavettes De Boeuf</li>
+        <li>280g De Riz</li>
+        <li>1 Oignon Jaune</li>
+        <li>12 CàS Sauce Soja Salée</li>
+        <li>20g De Maïzena</li>
+        <li>4 CçS De Miel Liquide</li>
+    </ul>
+</div>
+
+<div class="etapes">
+    <ul>
+        <li><span class="st">Étape 1:</span> Cuire le riz selon les instructions du paquet (soit environ 10 minutes dans de l'eau bouillante salée). Une fois cuit, égouttez-le et réservez.</li> 
+        <li><span class="st">Étape 2:</span> Pendant la cuisson du riz, épluchez et émincez l'oignon en fines lamelles.<li> 
+        <li><span class="st">Étape 3:</span> Émincez le boeuf.</li>
+        <li><span class="st">Étape 4:</span> Dans un bol, ajoutez le boeuf, la sauce soja, le miel et la maïzena. Mélangez le tout. Laissez reposer 2 ou 3 minutes.</li>
+        <li><span class="st">Étape 5:</span> Dans une poêle chaude, ajoutez un filet d'huile d'olive . Ajoutez l'oignon et faites cuire 3 minutes à feu moyen.</li> 
+        <li><span class="st">Étape 6:</span> Ajoutez dans la poêle le boeuf mariné (avec sa marinade) et laissez cuire 6 minutes tout en remuant.<li> 
+        <li><span class="st">Étape 7:</span> Servez le boeuf avec le riz. (Optionnel : Ajoutez quelques feuilles de coriandre si vous en avez). C'est prêt !</li> 
+          
+    </ul>
+</div>
+
+</body>
+
+</html>
